@@ -21,10 +21,6 @@ JavaScript
 Como empezar?
 Tenemos que colocar estos comandos
 
-git clone https://github.com/EzzCream/PokeApp.git
-cd PokeApp
-npm i
-num run dev
 Equipo 4
 
 Alexia Mata
