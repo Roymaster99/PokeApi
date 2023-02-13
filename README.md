@@ -23,9 +23,9 @@ Tenemos que colocar estos comandos
 
 Equipo 4
 
-Alexia Mata
-Miguel Garza
-Óscar Rodríguez
-Carlos Villa
-Iván Mercado
-Rodrigo Chapa
+*Alexia Mata
+*Miguel Garza
+*Óscar Rodríguez
+*Carlos Villa
+*Iván Mercado
+*Rodrigo Chapa
