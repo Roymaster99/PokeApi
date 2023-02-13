@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+body {
+	background-color: #f5dc80 !important;
+	margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Chewy', cursive;
+	color: #4d3725;
+	margin: 10px;
+}
+.navigation-bar {
+	display: flex;
+	background-color: #66462c;
+	margin: 0;
+	padding: 1rem 6rem 1rem 6rem;
+	height: 4.5rem;
+	width: auto;
+}
+.logo {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.logo img {
+	width: auto;
+	padding: 0;
+}
+.logo h2 {
+	color: white;
+	font-size: 2rem;
+	margin: 0;
+	padding: 1.25rem 2rem 1.25rem 2rem;
+	font-family: 'Chewy', cursive;
+	word-spacing: 0.1rem;
+	letter-spacing: 0.1rem;
+	font-weight: 800;
+}
+.caja {
+	background-color: #f6bc60;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main {
+	padding: 3rem 6rem;
+}
+.pokemon {
+	grid-area: pokemon;
+	height: auto;
+	width: auto;
+}
+.datos {
+	grid-area: datos;
+	height: auto;
+	width: auto;
+	padding: 20px;
+}
+.fortalezas {
+	grid-area: fortalezas;
+	height: auto;
+	width: auto;
+}
+.debilidades {
+	grid-area: debilidades;
+	height: auto;
+	width: auto;
+}
+.stats {
+	grid-area: stats;
+	height: auto;
+	width: auto;
+}
+#informacion {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 350px;
+	row-gap: 20px;
+	column-gap: 20px;
+	align-self: center;
+	text-align: center;
+	grid-template-areas: 'pokemon datos';
+}
+#estadisticas {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 160px 160px;
+	row-gap: 20px;
+	column-gap: 20px;
+	align-self: center;
+	text-align: center;
+	grid-template-areas:
+		'fortalezas stats'
+		'fortalezas stats';
+}
+.footer {
+	display: block;
+	background-color: #66462c;
+	margin: 0;
+	padding: 1rem 6rem 1rem 6rem;
+	height: 4.5rem;
+}
+.footer li {
+	list-style-type: none;
+	display: inline;
+	padding: 0 1.5rem;
+	float: right;
+	font-family: 'Chewy', cursive;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: white;
+}
+.footer p {
+	margin: 0.2rem 0 0 0;
+	padding: 0 1.8rem;
+	float: right;
+	font-family: 'Chewy', cursive;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: white;
+}
+
+/* Responsive tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.logo {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	.logo img {
+		width: auto;
+		padding: 0;
+	}
+	.logo h2 {
+		color: white;
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 1.25rem 0 1.25rem 2rem;
+		font-family: 'Chewy', cursive;
+		word-spacing: 0.1rem;
+		letter-spacing: 0.1rem;
+		font-weight: 800;
+	}
+	.footer {
+		display: block;
+		background-color: #66462c;
+		margin: 0;
+		padding: 1rem 6rem 1rem 6rem;
+		height: 4.5rem;
+	}
+	.footer li {
+		list-style-type: none;
+		display: inline;
+		padding: 0 0.5rem;
+		float: right;
+		font-family: 'Chewy', cursive;
+		font-size: 1rem;
+		font-weight: 400;
+		color: white;
+	}
+	.footer p {
+		margin: 0.5rem 0;
+		padding: 0 1.5rem;
+		float: right;
+		font-family: 'Chewy', cursive;
+		font-size: 1rem;
+		font-weight: 400;
+		color: white;
+	}
+}
+img {
+	width: 200px;
+}
+/* Responsive móviles */
+@media screen and (max-width: 767px) {
+	.navigation-bar {
+		display: flex;
+		background-color: #66462c;
+		margin: 0;
+		padding: 1rem 1.5rem 1rem 1.5rem;
+		height: 3.5rem;
+		width: auto;
+	}
+	.main {
+		padding: 0;
+		margin: 2rem;
+	}
+	.logo {
+		flex-direction: row;
+		width: 100%;
+	}
+	.logo img {
+		width: auto;
+		padding: 0;
+	}
+
+	.logo h2 {
+		color: white;
+		font-size: 1rem;
+		margin: 0;
+		padding: 1.25rem 0 1.25rem 0.5rem;
+		font-family: 'Chewy', cursive;
+		word-spacing: 0.1rem;
+		letter-spacing: 0.1rem;
+		font-weight: 600;
+	}
+	.caja {
+		width: auto;
+	}
+
+	#informacion {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, 300px);
+		row-gap: 20px;
+		column-gap: 5px;
+		align-self: center;
+		text-align: center;
+		grid-template-areas:
+			'pokemon pokemon'
+			'datos datos';
+	}
+	#estadisticas {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, 250px);
+		row-gap: 20px;
+		column-gap: 5px;
+		align-self: center;
+		text-align: center;
+		grid-template-areas:
+			'fortalezas fortalezas'
+			'stats stats';
+	}
+	.footer {
+		display: block;
+		background-color: #66462c;
+		margin: 0;
+		padding: 1rem 1.5rem 1rem 1.5rem;
+		height: 4.5rem;
+	}
+	.footer li {
+		list-style-type: none;
+		display: inline;
+		padding: 0 0.25rem;
+		float: right;
+		font-family: 'Chewy', cursive;
+		font-size: 0.9rem;
+		font-weight: 400;
+		color: white;
+	}
+	.footer p {
+		margin: 0.5rem 0;
+		padding: 0 1.5rem;
+		float: right;
+		font-family: 'Chewy', cursive;
+		font-size: 0.7rem;
+		font-weight: 400;
+		color: white;
+	}
+}
